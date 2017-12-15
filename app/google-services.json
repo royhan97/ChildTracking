@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "510071134583",
+    "firebase_url": "https://kerak-e2c3e.firebaseio.com",
+    "project_id": "kerak-e2c3e",
+    "storage_bucket": "kerak-e2c3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510071134583:android:b493f2da06c02010",
+        "android_client_info": {
+          "package_name": "wkwkw.asek.kerak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510071134583-h8b5238c1n0d1fcjhpcjgqqq0rt4n55s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wkwkw.asek.kerak",
+            "certificate_hash": "3db1d2450baa2072fbea35910d1b917e4ededebe"
+          }
+        },
+        {
+          "client_id": "510071134583-1bvci8oqlo15osgknvrsikd22bgdb2m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCXoHVk-eiw3C-DuTM0KM1LBg-QNDY8jg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510071134583-1bvci8oqlo15osgknvrsikd22bgdb2m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
