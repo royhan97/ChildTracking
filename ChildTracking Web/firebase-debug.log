@@ -1,0 +1,41 @@
+[debug] [2017-12-15T02:48:43.113Z] ----------------------------------------------------------------------
+[debug] [2017-12-15T02:48:43.129Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\royad\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-12-15T02:48:43.130Z] CLI Version:   3.16.0
+[debug] [2017-12-15T02:48:43.130Z] Platform:      win32
+[debug] [2017-12-15T02:48:43.130Z] Node Version:  v8.9.2
+[debug] [2017-12-15T02:48:43.130Z] Time:          Fri Dec 15 2017 09:48:43 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-15T02:48:43.130Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-15T02:48:43.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-15T02:48:43.140Z] > authorizing via signed-in user
+[debug] [2017-12-15T02:48:43.142Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-15T02:48:43.142Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/1AFbxOwFXC96IqazQx5ahgc0YKXbuMg_u_f2-5_yZII',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Dec 15 2017 09:48:43 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-15T02:48:43.347Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-15T02:48:43.394Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/kerak-e2c3e  
+  
+ Fri Dec 15 2017 09:48:43 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-15T02:48:44.443Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-15T02:48:44.443Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/kerak-e2c3e/tokens  
+  
+ Fri Dec 15 2017 09:48:44 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-15T02:48:45.302Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'F:\IF 15\SMT. 5\PBP\Tubes\web pbp'...
+[info] 
+[debug] [2017-12-15T02:48:45.318Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/kerak-e2c3e  
+  
+ Fri Dec 15 2017 09:48:45 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-15T02:48:46.662Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-15T02:48:46.662Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/510071134583/clients/_:getWebAppConfig  
+  
+ Fri Dec 15 2017 09:48:46 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-15T02:48:47.571Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

@@ -1,0 +1,141 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+
+<title>Main Menu</title>
+
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Custom Signup Form Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAkV8x-raTvjIJhEqtGWrYIZf_pM7YfxJ4",
+    authDomain: "kerak-e2c3e.firebaseapp.com",
+    databaseURL: "https://kerak-e2c3e.firebaseio.com",
+    projectId: "kerak-e2c3e",
+    storageBucket: "kerak-e2c3e.appspot.com",
+    messagingSenderId: "510071134583"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="mainmenu.js"></script>
+<!-- //Meta-Tags -->
+
+<!-- Custom-Style-Sheet -->
+<!-- Index-Page-CSS --> <link rel="stylesheet" href="css/style.css" 	type="text/css" media="all">
+<!-- Calendar-CSS -->	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all">
+<!-- //Custom-Style-Sheet -->
+
+
+</head>
+<!-- //Head -->
+
+
+
+<!-- Body -->
+<body>
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	  <h4 id="heading" class="navbar-brand"></h4>
+	</div>
+	<ul class="nav navbar-nav navbar-right">
+	  <li><a href="form login.html"><span class="glyphicon glyphicon-log-out" onClick="logout()"></span> Keluar</a></li>
+	</ul>
+	</div>
+	</nav>
+	
+	<div class="containerw3layouts-agileits">
+
+		<div class="w3imageaits">
+            <img class="user" id="qr_code" alt="QR Code">
+			<h5>Scan Barcode</h5>
+			<p>Untuk login pada smartphone anak anda</p>
+		</div>
+
+		<div class="aitsloginwthree w3layouts agileits">
+			<div class="w3-container">
+              <h2>Anak</h2>
+              <ul class="w3-ul w3-card-4">
+                <li class="w3-bar">
+                  <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+					<br>
+                    <span class="w3-large" id="namaAnak"></span><br>
+                  </div>
+                </li>
+				<a href="maps.html" class="transition">Track</a>
+              </ul>
+            </div>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+	
+	<section class="mdl-grid content" id="recent-posts-list" style="display:none">
+      <div class="message mdl-cell mdl-cell--12-col mdl-grid">
+      </div>
+    </section>
+
+<!--
+	<div class="w3lsfooteragileits">
+		<p> &copy; Design by <a href="http://w3layouts.com" target="=_blank">W3layouts</a></p>
+	</div>
+-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("body").css("display", "none");
+	 
+		$("body").fadeIn(2000);
+	 
+		$("a.transition").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(1000, redirectPage);      
+		});
+			 
+		function redirectPage() {
+			window.location = linkLocation;
+		}
+	});
+	
+	function logout(){
+		firebase.auth().signOut();
+		localStorage.removeItem("userId");
+	}
+	</script>
+    
+	
+
+
+</body>
+<!-- //Body -->
+
+
+
+</html>
